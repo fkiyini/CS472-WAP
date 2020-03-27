@@ -1,0 +1,20 @@
+.firstHeading{
+    color: blueviolet;
+  font-size:  33pt;
+}
+span{
+    color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+}
+body{
+    background-color: darkslategray;
+}
+h3{
+    color: blueviolet;
+}
+a:visited{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}

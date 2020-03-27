@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            border: 2px dashed black;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px;
+            float: left;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 290px;
+            background-color: black;
+            margin: 10px;
+            float: left;
+        }
+
+        .break {
+            clear: left;
+        }
+
+        .ex02 {
+            background-color: red;
+        }
+
+        ul {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+        }
+
+        #container {
+            background-color: lightgray;
+            overflow: hidden;
+            padding: 10px;
+            width: 500px;
+
+        }
+
+        #column1,
+        #column2 {
+            background-color: lightblue;
+            float: right;
+            margin-left: 10px;
+            width: 100px;
+        }
+
+        h1 {
+            background-color: yellow;
+        }
+
+        #a,
+        #b {
+            width: 100px;
+            height: 100px;
+            font: 30pt bold Helvetica, Arial, sans-serif;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        #a {
+            background-color: lightblue;
+            float: left;
+        }
+
+        #b {
+            background-color: pink;
+            float: right;
+            clear: left;
+
+        }
+
+        #c {
+            background-color: lightgray;
+            width: 100px;
+            text-align: right;
+            margin-left: auto;
+            margin-right: auto;
+         
+        }
+
+        .outerexo4 {
+            border: 2px dashed black;
+            float: left;
+            padding: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box break"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <ul>
+        <li>Bananas</li>
+        <li>Apples</li>
+        <li>Grapefruit</li>
+        <li>Oranges</li>
+        <li>Papaya</li>
+    </ul>
+    <div id="container">
+        <h1>Header</h1>
+
+        <div id="column1">
+            <h2>Area 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua...</p>
+        </div>
+
+        <div id="column2">
+            <h2>Area 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur ...</p>
+        </div>
+
+        <h2>Area 3</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.</p>
+    </div>
+    <hr>
+    <div id="outer">
+        <div id="container" class="box1">
+            <div id="a">A</div>
+            <div id="c">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget massa sed nunc imperdiet ultrices.
+                Sed
+                elit nisl, accumsan eget vehicula lacinia, tincidunt et risus. Nulla nisi ligula, consectetur quis
+                volutpat
+                in, porttitor in enim. Aliquam eu orci eu elit vestibulum sollicitudin. Pellentesque quis quam lacus, ac
+                rutrum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nullam
+                semper, dui et ornare commodo, ipsum tortor lacinia justo, non iaculis ante nunc sed tellus. Praesent
+                viverra sodales felis vel pretium. Ut viverra lacus ut justo egestas blandit. Nullam libero nibh,
+                viverra
+                sed sodales in, vehicula vitae lacus.
+            </div>
+            <div id="b">B</div>
+        </div>
+        <div id="container" class="box1">
+
+            <div id="a">A</div>
+            <div id="c">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget massa sed nunc imperdiet ultrices.
+                Sed
+                elit nisl, accumsan eget vehicula lacinia, tincidunt et risus. Nulla nisi ligula, consectetur quis
+                volutpat
+                in, porttitor in enim. Aliquam eu orci eu elit vestibulum sollicitudin. Pellentesque quis quam lacus, ac
+                rutrum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nullam
+                semper, dui et ornare commodo, ipsum tortor lacinia justo, non iaculis ante nunc sed tellus. Praesent
+                viverra sodales felis vel pretium. Ut viverra lacus ut justo egestas blandit. Nullam libero nibh,
+                viverra
+                sed sodales in, vehicula vitae lacus.
+            </div>
+            <div id="b">B</div>
+        </div>
+        <div id="container" class="box1">
+            <div id="a">A</div>
+            <div id="c">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget massa sed nunc imperdiet ultrices.
+                Sed
+                elit nisl, accumsan eget vehicula lacinia, tincidunt et risus. Nulla nisi ligula, consectetur quis
+                volutpat
+                in, porttitor in enim. Aliquam eu orci eu elit vestibulum sollicitudin. Pellentesque quis quam lacus, ac
+                rutrum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nullam
+                semper, dui et ornare commodo, ipsum tortor lacinia justo, non iaculis ante nunc sed tellus. Praesent
+                viverra sodales felis vel pretium. Ut viverra lacus ut justo egestas blandit. Nullam libero nibh,
+                viverra
+                sed sodales in, vehicula vitae lacus.
+            </div>
+            <div id="b">B</div>
+        </div>
+
+    </div>
+
+    <hr>
+    <div>
+        <div id="container">
+            <div id="a">A</div>
+            <div id="b">B</div>
+            <div id="c">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget massa sed nunc imperdiet ultrices.
+                Sed
+                elit nisl, accumsan eget vehicula lacinia, tincidunt et risus. Nulla nisi ligula, consectetur quis
+                volutpat
+                in, porttitor in enim. Aliquam eu orci eu elit vestibulum sollicitudin. Pellentesque quis quam lacus, ac
+                rutrum erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nullam
+                semper, dui et ornare commodo, ipsum tortor lacinia justo, non iaculis ante nunc sed tellus. Praesent
+                viverra sodales felis vel pretium. Ut viverra lacus ut justo egestas blandit. Nullam libero nibh,
+                viverra
+                sed sodales in, vehicula vitae lacus.
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

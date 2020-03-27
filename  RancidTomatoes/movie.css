@@ -40,7 +40,7 @@ header {
 }
 
 .container {
-    height: 1009px;
+    height: 1030px;
     width: 800px;
     margin: 0 auto;
     border: 4px gray solid;
@@ -139,16 +139,18 @@ ul li{
 }
 #validators{
     float:right;
+    bottom: 0;
+    opacity: 0.5;
+    right: 0;
+    position: fixed;
 }
 #pageCount{
     text-align: center;
     clear: both;
     background-color:#A2B964;
     border-radius: 0 0 15px 15px;
+    padding: 5px;
     
 }
-#pageCount1{
-    text-align: center;
-      
-}
+
 

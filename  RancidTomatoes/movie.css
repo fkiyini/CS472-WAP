@@ -40,7 +40,7 @@ header {
 }
 
 .container {
-    height: 1020px;
+    height: 1015px;
     width: 800px;
     margin: 0 auto;
     border: 4px gray solid;
@@ -142,7 +142,7 @@ ul li{
 }
 #pageCount{
     text-align: center;
-   clear: both;
+    clear: both;
     background-color:#A2B964;
     border-radius: 0 0 15px 15px;
     

@@ -1,0 +1,13 @@
+#txt{
+    background-color: paleturquoise;
+    margin: 600px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: purple;
+    
+
+}
+body {
+    min-height: 100vh;
+}

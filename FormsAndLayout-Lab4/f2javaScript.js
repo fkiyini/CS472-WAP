@@ -30,3 +30,10 @@ function funcSubmit(event) {
     console.log("chBox" + chBox);
 
 }
+document.getElementById("formLogin").addEventListener(
+    "submit",
+    event.preventDefault();
+    console.log(document.getElementById("exampleInputEmail1").value)
+}
+
+);

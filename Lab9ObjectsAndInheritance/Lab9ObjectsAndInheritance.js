@@ -33,7 +33,7 @@ let personOne = Object.create(person);
 personOne.setName('John');
 personOne.setDateOfBirth('1998-12-10');
 console.log('The person’s name is ' + personOne.getName());
-console.log(personOne.getName() + ' was born on ' + personOne.getDateOfBirth());
+console.log(personOne.getName() + ' was born on ' + personOne.getDateOfBirth() );
 
 /* 2. Given that an Employee IS-A person, applying JavaScript inheritance and the Object.create(…) method, create a generic object named, employee, with the following properties:
         a. Salary (initialize this with the value zero dollars
@@ -59,14 +59,13 @@ let employee = {
     getJobTtile: function () {
         return this.jobTitle;
     },
-    doJob: function (title) {
+    doJob: function(title) {
         return `${personTwo.getName()} is a ${title} who earns $${this.salary}`
     }
 }
-let emp = Object.create(employee);
-emp.setSalary(249995.50);
+employee.setSalary(249995.50);
 personTwo.setName('Anna');
-const doJob = emp.doJob('Programmer');
+const doJob = employee.doJob('Programmer');
 console.log(doJob);
 
 /*  3. Re-write the person object specification described in Question 1 above, but this time, using a Constructor Function named, Person.
@@ -75,7 +74,7 @@ console.log(doJob);
 Using your constructor function for the person object, create a person named, Peter, whose date of birth is November 10, 1985.
 Print-out to the console, the information for the person named, Peter, using its toString() method. */
 
-class Person {
+class Person{
     constructor(name, dateOfBirth) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;

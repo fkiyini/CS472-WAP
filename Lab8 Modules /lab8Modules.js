@@ -19,9 +19,7 @@ const counterRMP = (function () {
         counter = 0;
     }
     return {
-        add: function () {
-            add();
-        },
+        add: add,
         reset: function () {
             reset();
         },
@@ -142,12 +140,12 @@ const Employee = (function () {
     function getName() {
         return name;
     }
-    function increaseSalary (percentage) {
+    function increaseSalary(percentage) {
         newSalary = getSalary() + (getSalary() * percentage / 100);
         setSalary(newSalary);
     }
-    function incrementAge () {
-        setAge(getAge () + 1);
+    function incrementAge() {
+        setAge(getAge() + 1);
     }
     return {
         getName: getName,
@@ -165,7 +163,7 @@ Employee.setName('Farouk Kiyini');
 Employee.setAge(35);
 Employee.setSalary(150000)
 console.log("Name: " + Employee.getName() + " Age: " + Employee.getAge());
-Employee
+//Employee
 
 
 
@@ -174,11 +172,129 @@ Employee
 Employee.address = "";
 // another method! (Q: public or private? public)
 Employee.getAddress = function () {
-  return Employee.address;
+    return Employee.address;
 };
 Employee.setAddress = function (newAddress) {
-  Employee.address = newAddress;
+    Employee.address = newAddress;
 };
 
 Employee.setAddress("Nashiville Tenese");
 console.log("Name: " + Employee.getName() + " Age: " + Employee.getAge() + " Address: " + Employee.getAddress());
+
+
+const Employee1 = function () {
+    let name1 = "";
+    let age1 = 0;
+    let salary1 = 0.0;
+
+    function setAge1(newAge1) {
+        age1 = newAge1;
+    }
+    function setSalary1(newSalary1) {
+        salary1 = newSalary1;
+    }
+    function setName1(newName1) {
+        name1 = newName1;
+    }
+    function getAge1() {
+        return age1;
+    }
+    function getSalary1() {
+        return salary1;
+    }
+    function getName1() {
+        return name1;
+    }
+    function increaseSalary1(percentage1) {
+        newSalary1 = getSalary1() + (getSalary1() * percentage1 / 100);
+        setSalary1(newSalary1);
+    }
+    function incrementAge1() {
+        setAge1(getAge1() + 1);
+    }
+    return {
+        getName1: getName1,
+        getAge1: getAge1,
+        setName1: setName1,
+        setAge1: setAge1,
+        setSalary1: setSalary1,
+        increaseSalary1: increaseSalary1,
+        incrementAge1: incrementAge1
+    }
+};
+const emp = Employee1();
+emp.setName1('Farouk MINAOUR Kiyini');
+emp.setAge1(37);
+emp.setSalary1(180000)
+console.log("Name: " + emp.getName1() + " Age: " + emp.getAge1());
+
+
+emp.address1 = "";
+// another method! (Q: public or private? public)
+emp.getAddress1 = function () {
+    return emp.address1;
+};
+emp.setAddress1 = function (newAddress1) {
+    emp.address1 = newAddress1;
+};
+
+emp.setAddress1("FairField IOWA");
+console.log("Name: " + emp.getName1() + " Age: " + emp.getAge1() + " Address: " + emp.getAddress1());
+
+
+
+
+
+const Person = {
+    name2: " ",
+    setName2: function (name2) {
+        this.name2 = name2;
+    },
+    getName2: function () {
+        return this.name2;
+    }
+}
+
+let p1 = Object.create(Person);
+//p1.prototype.age2 = "";
+/* p1.setAge2 = function (aga2) {
+    this.age2 = age2;
+}
+p1.prototype.getAge2 = function () {
+    return this.age2;
+} */
+p1.setName2("Sharifah");
+//p1.setAge2("22");
+
+// console.log (`${p1.getName2()} and aged ${p1.getAge2()}`);
+console.log(`${p1.getName2()}`);
+
+
+
+function Animal() {
+    aName2 = " ",
+        function setaName3(aname2) {
+            this.aname2 = aname2;
+        },
+        function getaName3() {
+            return this.aname2;
+        }
+}
+
+/* let a1 = Object.create(Animal); */
+Animal.prototype.age2 = "";
+Animal.prototype.setAge3 = function (aga2) {
+    this.age2 = age2;
+}
+Animal.prototype.getAge3 = function () {
+    return this.age2;
+}
+
+const rabbit = new Animal();
+rabbit.setaName3("Kamuje");
+
+//Animal.setaName3("Kamuje");
+Animal.setAge3("2");
+
+console.log(`${Animal.getaName3()} and aged ${Animal.getAge3()}`);
+ //console.log (`${p1.getName2()}`);

@@ -1,0 +1,20 @@
+
+
+#image-div {
+    float: right;
+    margin-left: 100px;
+}
+
+.theme-color {
+    background-color: rgb(55, 81, 129);
+    color: white;
+}
+
+.text-color {
+    color: white;
+}
+
+footer {
+    background-color: rgb(26, 23, 190);
+    margin-top: 20px;
+}

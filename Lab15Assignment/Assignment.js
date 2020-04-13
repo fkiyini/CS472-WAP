@@ -4,14 +4,14 @@ $(function () { // IIFE function - InstantlyInvocked
     //displayClock();
     fetchAllBooks();
     addBook();
-    paginate();
+    //paginate();
 });
 
 
-function paginate() {
+/* function paginate() {
     $('#dtBasicExample').DataTable();
     $('.dataTables_length').addClass('bs-select');
-};
+}; */
 
 
 function fetchAllBooks() {
@@ -22,10 +22,11 @@ function fetchAllBooks() {
     fetch('https://elibraryrestapi.herokuapp.com/elibrary/api/book/list', { method: 'GET' })
         .then(response => {
             console.log(response)
-            if (response.ok) { return response.json(); }
+          /*   if (response.ok) { return response.json(); }
             else {
                 return Promise.reject({ status: response.status, statusText: response.body });
-            }
+            } */
+             return response.ok ? response.json(): response.reject({status:response.status,statusText:response.body});
         })
         .then(books => {
             books.forEach(book => {
@@ -44,7 +45,7 @@ function fetchAllBooks() {
                     book.datePublished + "</td></tr>"
                 );
             });
-            booksTable.css("display", "block"); 'Post response', response
+           // booksTable.css("display", "block"); 'Post response', response
         })
         .catch(error => {
             console.log('Error on fetching books:', error)
@@ -108,8 +109,7 @@ function addBook() {
 
 
 
-        fetch('https://elibraryrestapi.herokuapp.com/elibrary/api/book/add', {
-            method: 'POST',
+        fetch('https://elibraryrestapi.herokuapp.com/elibrary/api/book/add', {method: 'POST',
             body: JSON.stringify(newBook),
             headers: {
                 'Content-Type': 'application/json'
